@@ -51,5 +51,8 @@ Changes not staged for commit:
     
 删除文件：
     从工作区删除文件后，如果想恢复删除，可以使用git checkout --,这是在没有add进暂存区的前提下，可以恢复。如果add进了暂存区，并且之前的记录没有commit，那么就找不回来了。所以每次写了文件还是要commit上去的好。
+
+
+推送到远程：
     
     
