@@ -54,5 +54,8 @@ Changes not staged for commit:
 
 
 推送到远程：
+    正在本地运行备份肯定是不行的，一般使用github远程备份。一般是在本地写啊写，写好之后在githun上建一个仓库。第一次把本地的代码push到远程的时候要先关联git remote add origin git@github.com:michaelliao/learngit.git，再使用带 -u推送git push -u origin master。之后的push就不许要再使用带参数的push，git push origin master
     
-    
+
+分支：
+    Git的分支创建于合并比较快，是因为git使用指针进行分支的创建与合并。master指向主分支上的最新提交的节点，head默认指向master指针，这样看起来就是head指向主分支。当创建一个新的分支的时候，产生一个新的指针dev，此时head指针指向dev，从这以后，每次的提交都提交到dev指向的节点。合并的时候就是吧master指向当前dev指向的地方。由于这种创建和合并分支非常的快，所以每当要有新的功能想实现的时候，一般要先建立一个新的branch，然后写啊写，觉得合适了，就merge，这样是一个安全的方法，能够方便回退。ß  
